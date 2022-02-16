@@ -19,7 +19,7 @@
 
 ### api/account/show
 - type: GET
-- 
+
 - required fields in body:
     * empty body
 
