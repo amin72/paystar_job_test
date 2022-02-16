@@ -7,9 +7,9 @@
 api/account/register
 * type: POST
 * required fields in body:
--- card_number
--- password
--- password_confirmation
+** card_number
+** password
+** password_confirmation
 * required fields in header:
 -- Accept: application/json
 -- Authorization: Bearer {token}
