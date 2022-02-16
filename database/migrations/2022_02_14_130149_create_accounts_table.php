@@ -22,7 +22,6 @@ class CreateAccountsTable extends Migration
             // fields to hold bank account info
             $table->string('card_number', 26); // length is 26, eg: IR120620000000302876732005
             $table->string('password');
-            $table->unsignedBigInteger('total')->default(0);
 
             $table->timestamps();
         });

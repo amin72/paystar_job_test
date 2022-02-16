@@ -11,7 +11,6 @@ class Account extends Model
 
     protected $fillable = [
         'user_id',
-        'total',
         'card_number',
         'password',
     ];
@@ -20,8 +19,7 @@ class Account extends Model
         'password',
     ];
 
-
-    public function can_transfer_money($amount) {
-        return $this->total >= $amount;
+    public function user() {
+        return $this->belongsTo(\App\Models\User::class);
     }
 }
